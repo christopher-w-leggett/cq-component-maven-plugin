@@ -31,7 +31,11 @@ public class RteUISettingsBuilder {
         }
 
         if (uiSettingsAnnotation.fullscreen().length > 0) {
-            toolbars.add(buildToolbar(uiSettingsAnnotation.fullscreen()[0], "dialogFullScreen"));
+            toolbars.add(buildToolbar(uiSettingsAnnotation.fullscreen()[0], "fullscreen"));
+        }
+
+        if (uiSettingsAnnotation.dialogFullScreen().length > 0) {
+            toolbars.add(buildToolbar(uiSettingsAnnotation.dialogFullScreen()[0], "dialogFullScreen"));
         }
 
         CUIParameters cuiParamers = new CUIParameters();

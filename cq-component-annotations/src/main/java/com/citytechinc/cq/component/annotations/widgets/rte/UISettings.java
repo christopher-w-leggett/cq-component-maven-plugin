@@ -17,4 +17,11 @@ public @interface UISettings {
      * Configures in fullscreen toolbar
      */
     ToolbarConfig[] fullscreen() default {};
+
+    /**
+     * For Touch-UI Only
+     * <p>
+     * Configures in dialogFullScreen toolbar
+     */
+    ToolbarConfig[] dialogFullScreen() default {};
 }
